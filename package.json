@@ -1,6 +1,6 @@
 {
     "name": "atlantabot",
-    "version": "4.12.0",
+    "version": "6.14.12",
     "description": "A very complete Discord bot (more than 70 commands) that uses the Discordjs API!",
     "main": "atlanta.js",
     "scripts": {
