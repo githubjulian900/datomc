@@ -21,7 +21,7 @@ module.exports = {
 	/* For the embeds (embeded messages) */
 	embed: {
 		color: "#0091fc", // The default color for the embeds
-		footer: "Datom" // And the default footer for the embeds
+		footer: "Datom - Alle Rechten In Bezit " // And the default footer for the embeds
 	},
 	/* Bot's owner informations */
 	owner: {
@@ -48,13 +48,4 @@ module.exports = {
 		amethyste: "XXXXXXXXXXX",
 		// SENTRY: https://sentry.io (this is not required and not recommended - you can delete the field)
 		sentryDSN: "XXXXXXXXXXX"
-	},
 	}
-	/* The Bot status */
-	status: [
-		{
-			name: "@Datom Bot Helpt op {serversCount} servers",
-			type: "LISTENING"
-		}
-	]
-;
