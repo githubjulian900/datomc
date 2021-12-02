@@ -48,4 +48,5 @@ module.exports = {
 		amethyste: "XXXXXXXXXXX",
 		// SENTRY: https://sentry.io (this is not required and not recommended - you can delete the field)
 		sentryDSN: "XXXXXXXXXXX"
-	}
+	} 
+};
