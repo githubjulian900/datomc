@@ -16,7 +16,8 @@
     "bugs": {},
     "homepage": "",
     "dependencies": {
-        "discord.js": "^13.3.1"
+        "discord.js": "^13.3.1",
+        "@sentry/node": "6.3.6"
     },
     "devDependencies": {
         "eslint": "^7.5.0"
