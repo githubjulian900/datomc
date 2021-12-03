@@ -1,14 +1,13 @@
 require("./helpers/extenders");
 
-
-
 const Sentry = require("@sentry/node"),
 	util = require("util"),
 	fs = require("fs"),
 	readdir = util.promisify(fs.readdir),
-      chalk = require("chalk");
+	mongoose = require("mongoose"),
+	chalk = require("chalk");
 
-const config = require("./config.sample.js");
+const config = require("./config");
 if(config.apiKeys.sentryDSN){
 	try {
 		Sentry.init({ dsn: config.apiKeys.sentryDSN });
@@ -48,7 +47,7 @@ const init = async () => {
 		delete require.cache[require.resolve(`./events/${file}`)];
 	});
     
-	client.login(process.env.Token); // Log in to the discord api
+	client.login(process.env.TOKEN); // Log in to the discord api
 
 	// connect to mongoose database
 	mongoose.connect(client.config.mongoDB, { useNewUrlParser: true, useUnifiedTopology: true }).then(() => {
@@ -77,6 +76,3 @@ client.on("disconnect", () => client.logger.log("Bot is disconnecting...", "warn
 process.on("unhandledRejection", (err) => {
 	console.error(err);
 });
-
-		 
-		 
