@@ -18,17 +18,11 @@ module.exports = class {
 		const discordbotsorg = require("../helpers/discordbots.org.js");
 		discordbotsorg.init(client);
 
-		/* UNMUTE USERS */
-		const checkUnmutes = require("../helpers/checkUnmutes.js");
-		checkUnmutes.init(client);
-
+		
 		/* SEND REMINDS */
 		const checkReminds = require("../helpers/checkReminds.js");
 		checkReminds.init(client);
 
-		/* DAILY SHOP FORTNITE */
-		const fortniteShop = require("../helpers/fortniteShop.js");
-		fortniteShop.init(client);
 
 		// Start the dashboard
 		if(client.config.dashboard.enabled){
