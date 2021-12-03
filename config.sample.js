@@ -1,6 +1,5 @@
 module.exports = {
-	
-	const mongooselink = require "mongodb+srv://1JULIANSMIDT:<password>@cluster0.gnxhs.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+module.exports = {
 	/* For the support server */
 	support: {
 		id: "XXXXXXXXXXX", // The ID of the support server
