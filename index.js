@@ -77,7 +77,6 @@ process.on("unhandledRejection", (err) => {
 	console.error(err);
 });
 
-mongoose.connect(config.mongoose, {
-console.log("DatabaseConnectet")		 
+mongoose.connect(config.mongoose) 
 		 
-		 }
+		 
