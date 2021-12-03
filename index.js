@@ -1,5 +1,4 @@
 require("./helpers/extenders");
-const mongoose = requiere(mongoose)
 
 const Sentry = require("@sentry/node"),
 	util = require("util"),
