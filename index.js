@@ -1,5 +1,11 @@
 require("./helpers/extenders");
-const mongooselink = require "mongodb+srv://1JULIANSMIDT:<Julian123>@cluster0.gnxhs.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+const mongooselink = require "mongodb+srv://1JULIANSMIDT:<password>@cluster0.gnxhs.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+const mclient = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
+client.connect(err => {
+  const collection = mclient.db("test").collection("devices");
+  // perform actions on the collection object
+  mclient.close();
+});
 
 const Sentry = require("@sentry/node"),
 	util = require("util"),
