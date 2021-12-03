@@ -32,7 +32,7 @@ class Atlanta extends Client {
 				parse: ["users"]
 			}
 		});
-		this.config = require("../config"); // Load the config file
+		this.config = require("../config.sample.js"); // Load the config file
 		this.customEmojis = require("../emojis.json"); // load the bot's emojis
 		this.languages = require("../languages/language-meta.json"); // Load the bot's languages
 		this.commands = new Collection(); // Creates new commands collection
