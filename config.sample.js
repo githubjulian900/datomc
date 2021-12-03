@@ -1,17 +1,17 @@
 module.exports = {
 	/* For the support server */
 	support: {
-		id: "XXXXXXXXXXX", // The ID of the support server
+		id: "901582192910692422", // The ID of the support server
 		logs: "XXXXXXXXXXX", // And the ID of the logs channel of your server (new servers for example)
 	},
 	/* Dashboard configuration */
 	dashboard: {
 		enabled: false, // whether the dashboard is enabled or not
-		secret: "XXXXXXXXXXX", // Your discord client secret
-		baseURL: "http://maxhgaming.c1.bic", // The base URl of the dashboard
+		secret: "0s3PHSLWwaG5XqIvvIoeszpxFt8z9qbB", // Your discord client secret
+		baseURL: "http://maxhgaming.c1.bic/Datom/datom.html", // The base URl of the dashboard
 		logs: "XXXXXXXXXXX", // The channel ID of logs
 		port: 8080, // Dashboard port
-		expressSessionPassword: "XXXXXXXXXXX", // Express session password (it can be what you want)
+		expressSessionPassword: "@Datom1", // Express session password (it can be what you want)
 		failureURL: "http://.maxhgamingc1.biz" // url on which users will be redirected if they click the cancel button (discord authentication)
 	},
 	prefix: "*", // The default prefix for the bot
