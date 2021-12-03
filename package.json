@@ -1,6 +1,6 @@
 {
     "name": "discord.js",
-    "version": "13.4.0-dev",
+    "version": "12.5.3",
     "description": "",
     "main": "index.js",
     "engines": {
