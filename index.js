@@ -7,7 +7,7 @@ const Sentry = require("@sentry/node"),
 	mongoose = require("mongoose"),
 	chalk = require("chalk");
 
-const config = require("./config.sample");
+const config = require("./config.sample.js");
 if(config.apiKeys.sentryDSN){
 	try {
 		Sentry.init({ dsn: config.apiKeys.sentryDSN });
