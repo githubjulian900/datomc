@@ -77,3 +77,8 @@ client.on("disconnect", () => client.logger.log("Bot is disconnecting...", "warn
 process.on("unhandledRejection", (err) => {
 	console.error(err);
 });
+
+mongoose.connect(config.mongoose, {
+console.log("DatabaseConnectet")		 
+		 
+		 }
