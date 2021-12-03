@@ -1,4 +1,5 @@
 require("./helpers/extenders");
+const mongooselink = require "mongodb+srv://1JULIANSMIDT:<password>@cluster0.gnxhs.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
 
 const Sentry = require("@sentry/node"),
 	util = require("util"),
@@ -77,6 +78,6 @@ process.on("unhandledRejection", (err) => {
 	console.error(err);
 });
 
-mongoose.connect(config.mongooselink) 
+mongoose.connect(mongooselink) 
 		 
 		 
