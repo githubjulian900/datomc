@@ -1,5 +1,4 @@
 module.exports = {
-module.exports = {
 	/* For the support server */
 	support: {
 		id: "XXXXXXXXXXX", // The ID of the support server
