@@ -1,7 +1,5 @@
 const Command = require("../../base/Command.js"),
 	Discord = require("discord.js"),
-	Pagination = require("discord-paginationembed");
-
 class Queue extends Command {
 
 	constructor (client) {
