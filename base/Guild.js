@@ -1,5 +1,4 @@
-const mongoose = require("mongoose"),
-	Schema = mongoose.Schema,
+
 	config = require("../config.sample.js"),
 	languages = require("../languages/language-meta.json");
 
