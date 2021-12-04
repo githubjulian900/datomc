@@ -30,7 +30,7 @@ module.exports = class {
 		}
 
 		// Update the game every 20s
-		const status = require("../config.js").status,
+		const status = require("../config.sample.js").status,
 			version = require("../package.json").version;
 		let i = 0;
 		setInterval(function(){
