@@ -39,6 +39,7 @@ module.exports = {
         "mongoose": "^5.9.25",
         "ms": "^2.1.3",
         "string-sanitizer": "^1.1.1"
+	  }
 		  
 	/* For the support server */
 	support: {
