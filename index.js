@@ -4,7 +4,6 @@ const Sentry = require("@sentry/node"),
 	util = require("util"),
 	fs = require("fs"),
 	readdir = util.promisify(fs.readdir),
-	mongoose = require("mongoose"),
 	chalk = require("chalk");
 
 const config = require("./config.sample.js");
@@ -49,13 +48,7 @@ const init = async () => {
     
 	client.login(process.env.Token); // Log in to the discord api
 
-	// connect to mongoose database
-	mongoose.connect(client.config.mongoDB, { useNewUrlParser: true, useUnifiedTopology: true }).then(() => {
-		client.logger.log("Connected to the Mongodb database.", "log");
-	}).catch((err) => {
-		client.logger.log("Unable to connect to the Mongodb database. Error:"+err, "error");
-	});
-
+	
 	const languages = require("./helpers/languages");
 	client.translations = await languages();
     
