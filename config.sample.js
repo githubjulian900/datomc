@@ -10,7 +10,7 @@ module.exports = {
 	/* Dashboard configuration */
 	dashboard: {
 		enabled: true, // whether the dashboard is enabled or not
-		secret: "0s3PHSLWwaG5XqIvvIoeszpxFt8z9qbB", // Your discord client secret
+		secret: "", // Your discord client secret
 		baseURL: "http://maxhgaming.c1.bic/Datom/datom.html", // The base URl of the dashboard
 		logs: "XXXXXXXXXXX", // The channel ID of logs
 		port: 8080, // Dashboard port
